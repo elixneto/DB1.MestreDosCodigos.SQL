@@ -16,6 +16,7 @@ CREATE TABLE clinica (
 	cnpj VARCHAR(14) NOT NULL,
 	nome_fantasia VARCHAR(100) NOT NULL
 );
+CREATE UNIQUE INDEX idx_clinica_cnpj ON clinica (cnpj);
 
 
 CREATE TABLE tipo_profissional (
