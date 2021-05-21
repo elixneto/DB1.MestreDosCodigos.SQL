@@ -22,3 +22,7 @@
         insert vendas values(3, '01/01/2019', 3);
 ```
 ## O analista responsável pelo gerenciamento do banco de dados precisa excluir a tabela cliente. Levando em consideração o relacionamento entre as duas tabelas. Como seria o único comando que iria excluir a tabela cliente e vendas de uma só vez.
+Comando:
+```sql
+DROP TABLE vendas, cliente;
+```
