@@ -26,3 +26,13 @@
             clienteID  int FOREIGN KEY REFERENCES cliente(id),
             vendedorID  int FOREIGN KEY REFERENCES vendedor(id));
 ```
+SQL:
+```sql
+SELECT v.nome                          AS vendedor,
+       COALESCE(c.nome, '--')          AS cliente,
+       SUM(COALESCE(v2.totalvenda, 0)) AS total
+  FROM vendedor v
+  LEFT JOIN vendas v2 ON v2.vendedorID = v.id
+  LEFT JOIN cliente c ON c.id = v2.clienteID
+ GROUP BY v.nome, c.nome;
+```
