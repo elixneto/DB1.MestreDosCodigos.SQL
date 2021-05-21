@@ -22,7 +22,7 @@ CREATE TABLE vendedor (
             id         int NOT NULL PRIMARY KEY,
             code       int NOT NULL,
             totalvenda float,
-            dt_venda   date // ESTÁ COM ERRO AQUI (FALTA UMA VÍRGULA) : CORRIGIR NO MESTRE DOS CÓDIGOS
+            dt_venda   date   /* ESTÁ COM ERRO AQUI (FALTA UMA VÍRGULA) : CORRIGIR NO MESTRE DOS CÓDIGOS */
             clienteID  int FOREIGN KEY REFERENCES cliente(id),
             vendedorID  int FOREIGN KEY REFERENCES vendedor(id));
 ```
