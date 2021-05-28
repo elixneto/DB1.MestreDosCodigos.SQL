@@ -12,11 +12,11 @@ INSERT INTO ex6_aliquota_inss VALUES (2203.49, 3305.22, 12, 82.61, 314.01);
 INSERT INTO ex6_aliquota_inss VALUES (3305.23, 6433.57, 14, 148.72, 751.97);
 
 
-CREATE OR REPLACE FUNCTION fc_percentual_inss(salario DECIMAL)
-RETURN DECIMAL AS
+CREATE OR REPLACE FUNCTION fc_contribuicao_inss(salario DECIMAL)
+RETURN NUMBER AS
     vvalor_minimo DECIMAL(6, 2);
     vvalor_maximo DECIMAL(6, 2);
-    vteto        DECIMAL(6, 2);
+    vteto         DECIMAL(6, 2);
     vcontribuicao DECIMAL(6, 2);
 BEGIN
 
