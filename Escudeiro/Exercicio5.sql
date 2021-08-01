@@ -30,7 +30,7 @@ SELECT p.nome, p2.nome
   RIGHT JOIN profissional p2 ON p2.id = p.id_profissional_superior
  WHERE p.id IS NULL;
 
--- MINUS RIGHT+INTERSEC
+-- MINUS RIGHT+INTERSECT
 SELECT p.nome, p2.nome 
   FROM profissional p
   LEFT JOIN profissional p2 ON p2.id = p.id_profissional_superior
