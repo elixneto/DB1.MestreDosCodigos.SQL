@@ -3,5 +3,5 @@ SQL:
 ```sql
 SELECT *
   FROM cliente
- WHERE id IN (12, 10, 199, 18, 1, 2016);
+ WHERE id IN ('12', '10', '199', '18', '01', '2016');
 ```
