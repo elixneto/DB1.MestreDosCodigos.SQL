@@ -1,5 +1,3 @@
-UPDATE paciente SET data_nascimento = NULL WHERE nome = 'TESTE 6';
-
 SELECT COUNT(1) as quantidadeTotalDePacientes,
        COUNT(data_nascimento) as quantidadeDePacientesComDataDeNascimento
   FROM paciente;
